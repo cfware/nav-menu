@@ -9,9 +9,6 @@
 	},
 	"author": "Corey Farrell",
 	"license": "MIT",
-	"files": [
-		"nav-*.js"
-	],
 	"keywords": [
 		"custom-elements",
 		"navigation",
