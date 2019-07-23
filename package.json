@@ -1,6 +1,6 @@
 {
 	"name": "@cfware/nav-menu",
-	"version": "0.1.2",
+	"version": "0.1.3",
 	"description": "Navigation menu element",
 	"main": "nav-menu.js",
 	"scripts": {
