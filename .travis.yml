@@ -10,6 +10,5 @@ addons:
 #  firefox: latest
 
 install:
-  - which firefox
   - sudo rm $(which firefox)
   - npm install
