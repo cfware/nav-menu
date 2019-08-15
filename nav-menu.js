@@ -1,6 +1,6 @@
 import {ShadowElement, html} from '@cfware/shadow-element';
-import './nav-section';
-import './nav-item';
+import './nav-section.js';
+import './nav-item.js';
 
 class NavMenu extends ShadowElement {
 	update() {
