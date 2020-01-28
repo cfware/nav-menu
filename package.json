@@ -33,7 +33,7 @@
 		"@cfware/nyc": "^0.6.0",
 		"@fortawesome/fontawesome-free": "^5.10.2",
 		"ava": "^2.0.0",
-		"chromedriver": "^79.0.0",
+		"chromedriver": "^79.0.1",
 		"geckodriver": "^1.16.2",
 		"nyc": "^15.0.0",
 		"standard-version": "^7.0.0",
