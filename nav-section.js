@@ -1,4 +1,4 @@
-import {ShadowElement, html} from '@cfware/shadow-element';
+import {ShadowElement, html, template} from '@cfware/shadow-element';
 
 class NavSection extends ShadowElement {
 	constructor() {
@@ -11,7 +11,7 @@ class NavSection extends ShadowElement {
 		this.hidden = !this.querySelector('*:not([hidden])');
 	}
 
-	get template() {
+	get [template]() {
 		return html`
 			<style>
 				:host {

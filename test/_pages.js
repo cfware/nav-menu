@@ -1,7 +1,6 @@
-/* global document */
 import {setup, page} from '@cfware/ava-selenium-manager';
 import {FastifyTestHelper} from '@cfware/fastify-test-helper';
-import fastifyTestHelperConfig from './_fastify-test-helper.config';
+import fastifyTestHelperConfig from './_fastify-test-helper.config.js';
 
 page('nav-menu.html', async t => {
 	const {selenium, snapshotImage, grabImage} = t.context;

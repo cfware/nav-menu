@@ -1,4 +1,4 @@
-import {ShadowElement, html} from '@cfware/shadow-element';
+import {ShadowElement, html, template} from '@cfware/shadow-element';
 
 class NavItem extends ShadowElement {
 	constructor() {
@@ -15,7 +15,7 @@ class NavItem extends ShadowElement {
 		return new URL(this.href, document.baseURI).pathname;
 	}
 
-	get template() {
+	get [template]() {
 		return html`
 			<style>
 				a {

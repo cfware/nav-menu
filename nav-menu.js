@@ -1,4 +1,4 @@
-import {ShadowElement, html} from '@cfware/shadow-element';
+import {ShadowElement, html, template} from '@cfware/shadow-element';
 import './nav-section.js';
 import './nav-item.js';
 
@@ -10,9 +10,9 @@ class NavMenu extends ShadowElement {
 			.filter(item => pathname.startsWith(item.pathname))
 			.sort((a, b) => b.pathname.length - a.pathname.length);
 
-		items.forEach(item => {
+		for (const item of items) {
 			item.active = item === matches[0];
-		});
+		}
 
 		const sections = [...this.querySelectorAll('nav-section:not([hidden])')];
 		if (sections.length === 0) {
@@ -32,7 +32,7 @@ class NavMenu extends ShadowElement {
 		}
 	}
 
-	get template() {
+	get [template]() {
 		return html`
 			<style>
 				:host {
