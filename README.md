@@ -39,15 +39,6 @@ Use to create a navigation element:
 ```
 
 
-## Running tests
-
-Testing is provided by ava and xo.
-
-```sh
-npm install
-npm test
-```
-
 [npm-image]: https://img.shields.io/npm/v/@cfware/nav-menu.svg
 [npm-url]: https://npmjs.org/package/@cfware/nav-menu
 [travis-image]: https://travis-ci.org/cfware/nav-menu.svg?branch=master
