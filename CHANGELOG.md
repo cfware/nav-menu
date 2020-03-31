@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.3.0](https://github.com/cfware/nav-menu/compare/v0.2.0...v0.3.0) (2020-03-31)
+
+
+### ⚠ BREAKING CHANGES
+
+* update @cfware/shadow-element to version 0.12.0 (#31)
+
+### Features
+
+* update @cfware/shadow-element to version 0.12.0 ([#31](https://github.com/cfware/nav-menu/issues/31)) ([9f1011a](https://github.com/cfware/nav-menu/commit/9f1011a585f2781658d324e23e007ae97f955104))
+
 ## [0.2.0](https://github.com/cfware/nav-menu/compare/v0.1.4...v0.2.0) (2020-02-05)
 
 
