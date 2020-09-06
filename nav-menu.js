@@ -1,10 +1,10 @@
-import {ShadowElement, html, template} from '@cfware/shadow-element';
+import {ShadowElement, html, template, define} from '@cfware/shadow-element';
 import './nav-section.js';
 import './nav-item.js';
 
 class NavMenu extends ShadowElement {
 	update() {
-		const {pathname} = location;
+		const {pathname} = window.location;
 		const items = [...this.querySelectorAll('nav-item')];
 		const matches = items
 			.filter(item => pathname.startsWith(item.pathname))
@@ -46,4 +46,4 @@ class NavMenu extends ShadowElement {
 	}
 }
 
-NavMenu.define('nav-menu');
+NavMenu[define]('nav-menu');

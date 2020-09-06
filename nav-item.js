@@ -1,4 +1,4 @@
-import {ShadowElement, html, template} from '@cfware/shadow-element';
+import {ShadowElement, html, template, define, stringProperties, booleanProperties} from '@cfware/shadow-element';
 
 class NavItem extends ShadowElement {
 	constructor() {
@@ -54,10 +54,10 @@ class NavItem extends ShadowElement {
 	}
 }
 
-NavItem.define('nav-item', {
-	stringProps: {
+NavItem[define]('nav-item', {
+	[stringProperties]: {
 		title: '',
 		href: '.'
 	},
-	booleanProps: ['active']
+	[booleanProperties]: ['active']
 });
