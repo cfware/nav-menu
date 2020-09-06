@@ -1,45 +1,45 @@
 {
-	"name": "@cfware/nav-menu",
-	"version": "0.4.0",
-	"description": "Navigation menu element",
-	"main": "nav-menu.js",
-	"type": "module",
-	"scripts": {
-		"pretest": "cfware-lint .",
-		"tests-only": "nyc -s node test.js|tap-yaml-summary",
-		"test": "npm run -s tests-only",
-		"posttest": "nyc report --check-coverage"
-	},
-	"engines": {
-		"node": ">=14.0.0"
-	},
-	"author": "Corey Farrell",
-	"license": "MIT",
-	"keywords": [
-		"custom-elements",
-		"navigation",
-		"menu",
-		"html"
-	],
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/cfware/nav-menu.git"
-	},
-	"bugs": {
-		"url": "https://github.com/cfware/nav-menu/issues"
-	},
-	"homepage": "https://github.com/cfware/nav-menu#readme",
-	"dependencies": {
-		"@cfware/shadow-element": "^0.14.0"
-	},
-	"devDependencies": {
-		"@cfware/fastify-test-helper": "^0.7.0",
-		"@cfware/lint": "^2.0.1",
-		"@cfware/nyc": "^0.7.0",
-		"@cfware/tap-selenium-manager": "^1.0.0",
-		"@fortawesome/fontawesome-free": "^5.10.2",
-		"libtap": "^0.3.0",
-		"nyc": "^15.0.0",
-		"tap-yaml-summary": "^0.1.0"
-	}
+  "name": "@cfware/nav-menu",
+  "version": "1.0.0",
+  "description": "Navigation menu element",
+  "main": "nav-menu.js",
+  "type": "module",
+  "scripts": {
+    "pretest": "cfware-lint .",
+    "tests-only": "nyc -s node test.js|tap-yaml-summary",
+    "test": "npm run -s tests-only",
+    "posttest": "nyc report --check-coverage"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "author": "Corey Farrell",
+  "license": "MIT",
+  "keywords": [
+    "custom-elements",
+    "navigation",
+    "menu",
+    "html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cfware/nav-menu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cfware/nav-menu/issues"
+  },
+  "homepage": "https://github.com/cfware/nav-menu#readme",
+  "dependencies": {
+    "@cfware/shadow-element": "^0.14.0"
+  },
+  "devDependencies": {
+    "@cfware/fastify-test-helper": "^0.7.0",
+    "@cfware/lint": "^2.0.1",
+    "@cfware/nyc": "^0.7.0",
+    "@cfware/tap-selenium-manager": "^1.0.0",
+    "@fortawesome/fontawesome-free": "^5.10.2",
+    "libtap": "^0.3.0",
+    "nyc": "^15.0.0",
+    "tap-yaml-summary": "^0.1.0"
+  }
 }
