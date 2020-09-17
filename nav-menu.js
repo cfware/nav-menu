@@ -38,7 +38,7 @@ class NavMenu extends ShadowElement {
 				:host {
 					width: 15rem;
 					font-weight: 400;
-					-webkit-user-select: none;
+					user-select: none;
 				}
 			</style>
 			<slot />

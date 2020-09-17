@@ -19,7 +19,7 @@ class NavSection extends ShadowElement {
 					white-space: nowrap;
 				}
 
-				.title {
+				[t] {
 					background-color: #ddd;
 					color: #000;
 					cursor: pointer;
@@ -27,28 +27,28 @@ class NavSection extends ShadowElement {
 					padding: .75rem 1rem;
 				}
 
-				:host(:not(:first-child)) .title {
+				:host(:not(:first-child)) [t] {
 					border-top: 1px solid #0001;
 				}
 
-				.title::before {
+				[t]::before {
 					display: inline-block;
 					font-family: var(--expander-font-family);
-					content: '';
+					content: '\uF0DA';
 					width: 1.25rem;
 					text-align: center;
 					margin-right: 0.5rem;
 				}
 
-				:host([active]) .title::before {
-					content: '';
+				:host([active]) [t]::before {
+					content: '\uF0D7';
 				}
 
 				:host(:not([active])) ::slotted(nav-item) {
 					display: none;
 				}
 			</style>
-			<div class="title" onclick=${() => this.toggleAttribute('active')}>${this.title}</div>
+			<div t onclick=${() => this.toggleAttribute('active')}>${this.title}</div>
 			<slot onslotchange=${() => this._updateHidden()} />
 		`;
 	}
