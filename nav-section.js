@@ -1,4 +1,4 @@
-import {ShadowElement, html, template, define, stringProperties, booleanProperties} from '@cfware/shadow-element';
+import ShadowElement, {html, template, define, stringProperties, booleanProperties} from '@cfware/shadow-element';
 
 class NavSection extends ShadowElement {
 	constructor() {

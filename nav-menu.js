@@ -1,4 +1,4 @@
-import {ShadowElement, html, template, define} from '@cfware/shadow-element';
+import ShadowElement, {html, template, define} from '@cfware/shadow-element';
 import './nav-section.js';
 import './nav-item.js';
 
