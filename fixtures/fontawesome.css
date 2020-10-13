@@ -28,7 +28,3 @@ div {
 	display: flex;
 	flex-direction: column;
 }
-
-nav-section {
-	--expander-font-family: 'Font Awesome 5 Free';
-}

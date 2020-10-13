@@ -11,11 +11,6 @@ import '@cfware/nav-menu';
 
 Use to create a navigation element:
 ```html
-<style>
-	nav-section {
-		--expander-font-family: 'Font Family to use when rendering  and ';
-	}
-</style>
 <nav-menu>
 	<nav-section title="General">
 		<nav-item title="Welcome"></nav-item>

@@ -1,5 +1,7 @@
 import ShadowElement, {html, template, define, stringProperties, booleanProperties} from '@cfware/shadow-element';
 
+import '@cfware-app/icon';
+
 class NavSection extends ShadowElement {
 	constructor() {
 		super();
@@ -12,6 +14,7 @@ class NavSection extends ShadowElement {
 	}
 
 	get [template]() {
+		const icon = this.active ? '\uF0D7' : '\uF0DA';
 		return html`
 			<style>
 				:host {
@@ -20,6 +23,8 @@ class NavSection extends ShadowElement {
 				}
 
 				[t] {
+					display: grid;
+					grid-template-columns: auto 1fr;
 					background-color: #ddd;
 					color: #000;
 					cursor: pointer;
@@ -31,24 +36,19 @@ class NavSection extends ShadowElement {
 					border-top: 1px solid #0001;
 				}
 
-				[t]::before {
+				cfware-icon {
 					display: inline-block;
-					font-family: var(--expander-font-family);
-					content: '\uF0DA';
 					width: 1.25rem;
 					text-align: center;
 					margin-right: 0.5rem;
-				}
-
-				:host([active]) [t]::before {
-					content: '\uF0D7';
+					cursor: unset;
 				}
 
 				:host(:not([active])) ::slotted(nav-item) {
 					display: none;
 				}
 			</style>
-			<div t onclick=${() => this.toggleAttribute('active')}>${this.title}</div>
+			<div t onclick=${() => this.toggleAttribute('active')}><cfware-icon icon=${icon} />${this.title}</div>
 			<slot onslotchange=${() => this._updateHidden()} />
 		`;
 	}

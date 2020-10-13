@@ -32,7 +32,11 @@
 	"dependencies": {
 		"@cfware/shadow-element": "^0.15.0"
 	},
+	"peerDependencies": {
+		"@cfware-app/icon": "*"
+	},
 	"devDependencies": {
+		"@cfware-app/icon": "file:pkgs/icon",
 		"@cfware/fastify-test-helper": "^0.7.0",
 		"@cfware/lint": "^2.0.1",
 		"@cfware/nyc": "^0.7.0",
