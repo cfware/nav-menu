@@ -14,7 +14,6 @@ class NavSection extends ShadowElement {
 	}
 
 	get [template]() {
-		const icon = this.active ? '\uF0D7' : '\uF0DA';
 		return html`
 			<style>
 				:host {
@@ -44,11 +43,13 @@ class NavSection extends ShadowElement {
 					cursor: unset;
 				}
 
-				:host(:not([active])) ::slotted(nav-item) {
+				:host(:not([active])) ::slotted(nav-item),
+				:host(:not([active])) [active],
+				:host([active]) [inactive] {
 					display: none;
 				}
 			</style>
-			<div t onclick=${() => this.toggleAttribute('active')}><cfware-icon icon=${icon} />${this.title}</div>
+			<div t onclick=${() => this.toggleAttribute('active')}><cfware-icon active icon="\uF0D7" /><cfware-icon inactive icon="\uF0DA" />${this.title}</div>
 			<slot onslotchange=${() => this._updateHidden()} />
 		`;
 	}
