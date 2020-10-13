@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.7.0](https://github.com/cfware/nav-menu/compare/v0.6.0...v0.7.0) (2020-10-13)
+
+
+### ⚠ BREAKING CHANGES
+
+* Use @cfware-app/icon as peer dependency
+
+### Features
+
+* Use @cfware-app/icon as peer dependency ([82cc714](https://github.com/cfware/nav-menu/commit/82cc71463ff3fc76e13180ee7f3ef0f47182001e))
+
 ## [0.6.0](https://github.com/cfware/nav-menu/compare/v0.5.0...v0.6.0) (2020-09-17)
 
 
