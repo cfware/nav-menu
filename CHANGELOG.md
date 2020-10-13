@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.7.1](https://github.com/cfware/nav-menu/compare/v0.7.0...v0.7.1) (2020-10-13)
+
+
+### Bug Fixes
+
+* Immediate section arrow toggle ([f56ee1a](https://github.com/cfware/nav-menu/commit/f56ee1ae988cd196a17b1f5de491dc0b42673137))
+
 ## [0.7.0](https://github.com/cfware/nav-menu/compare/v0.6.0...v0.7.0) (2020-10-13)
 
 
