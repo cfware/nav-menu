@@ -1,4 +1,4 @@
-import ShadowElement, {html, template, define, stringProperties, booleanProperties} from '@cfware/shadow-element';
+import ShadowElement, {html, template, define, reflectBooleanProperties, reflectStringProperties} from '@cfware/shadow-element';
 
 import '@cfware-app/icon';
 
@@ -55,9 +55,6 @@ class NavSection extends ShadowElement {
 	}
 }
 
-NavSection[define]('nav-section', {
-	[stringProperties]: {
-		title: ''
-	},
-	[booleanProperties]: ['active']
-});
+reflectBooleanProperties(NavSection, ['active']);
+reflectStringProperties(NavSection, {title: ''});
+NavSection[define]('nav-section');
