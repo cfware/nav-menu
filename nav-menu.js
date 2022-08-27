@@ -1,4 +1,4 @@
-import ShadowElement, {html, template, define} from '@cfware/shadow-element';
+import ShadowElement, {html, template, css, adoptedStyleSheets, define} from '@cfware/shadow-element';
 import './nav-section.js';
 import './nav-item.js';
 
@@ -21,7 +21,7 @@ class NavMenu extends ShadowElement {
 
 		const activeSections = sections.filter(section => {
 			if (!section.active) {
-				section.active = section.querySelectorAll('nav-item[active]:not([hidden])').length !== 0;
+				section.active = section.querySelectorAll('nav-item[active]:not([hidden])').length > 0;
 			}
 
 			return section.active;
@@ -32,17 +32,18 @@ class NavMenu extends ShadowElement {
 		}
 	}
 
+	static [adoptedStyleSheets] = [
+		css`
+			:host {
+				width: 15rem;
+				font-weight: 400;
+				user-select: none;
+			}
+		`
+	];
+
 	get [template]() {
-		return html`
-			<style>
-				:host {
-					width: 15rem;
-					font-weight: 400;
-					user-select: none;
-				}
-			</style>
-			<slot />
-		`;
+		return html`<slot />`;
 	}
 }
 
